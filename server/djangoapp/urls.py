@@ -7,11 +7,15 @@ from . import views
 app_name = 'djangoapp'
 urlpatterns = [
     # # path for registration
+    path(route='register', view=views.registration, name='register'),
 
     # path for login
     path(route='login', view=views.login_user, name='login'),
 
-    # path for dealer reviews view
+    # path for logout view
+    path(route='logout', view=views.logout_request, name='logout')
+
+    # path for add a dealer review view
 
     # path for add a review view
 
